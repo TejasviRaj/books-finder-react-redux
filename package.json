@@ -30,5 +30,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-bootstrap": "^1.0.1",
+    "react-router-dom": "^5.2.0",
+    "typescript": "^3.9.5"
   }
 }
