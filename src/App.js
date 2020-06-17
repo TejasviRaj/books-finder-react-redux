@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import {Container, Col, Row} from 'react-bootstrap';
 import Books from './Components/BookDetail/BookDetail';
+import SearchBar from './Components/SearchBar/SearchBar';
+import './App.css';
 
 class App extends Component {
 
@@ -10,6 +12,7 @@ class App extends Component {
         <Container>
           <Row>
             <Col xs={12} md={12} lg={12}>
+              <SearchBar />
               <Books />
             </Col>
           </Row>

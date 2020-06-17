@@ -1,0 +1,54 @@
+/* Author- Tejasvi Raj Pant */
+
+.form-control-borderless {
+    border: none;
+    font-size: 2.3rem;
+
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.col-auto {
+    margin-right: 3px;
+
+	/* display: flex;
+	align-items: center;
+	justify-content: center; */
+}
+
+.sear {
+    font-size: 2.1rem;
+
+}
+
+.card {
+    margin-top: 2rem;
+    justify-content: center;
+    height: 6rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+}
+
+.card-body {
+    padding: 0;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn {
+    padding: .2rem .4rem;
+    border-color: #FFFFFF;
+    border-radius: 1.5rem;
+    width: 8rem;
+    height: 4rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-size: 20px;
+
+}
