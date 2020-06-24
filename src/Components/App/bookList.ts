@@ -1,6 +1,7 @@
  //Author- Tejasvi Raj Pant
- 
- let bookList = [
+ import Book from '../../Models/book'
+
+ let bookList: Book[] = [
     {
       "kind": "books#volume",
       "id": "JPDOSzE7Bo0C",
