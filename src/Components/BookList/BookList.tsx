@@ -3,15 +3,22 @@
 import React from 'react';
 import NoBook from './nobook.png';
 import './BookList.css';
+import Book from '../../Models/book'
 
-const BookList = (props) => {
+interface PropTypes {
+  books?: Book[] | null
+}
+
+const BookList = (props: PropTypes) => {
 
   return (
     <div>
       <div className="bookCardContainer">
         {
           props.books && props.books.map((book) => {
-            let { imageLinks, title, authors, publisher, previewLink } = book.volumeInfo
+
+            let { imageLinks, title, authors, publisher, previewLink } = book.volumeInfo ?? {};
+
             return (
               <div key={book.id} className="bookCard">
                 <div className="bookCardOuterFlex">

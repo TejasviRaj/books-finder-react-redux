@@ -3,8 +3,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './BookDetail.css';
-class Books extends Component {
-  render() {
+
+const BookDetail = () => {
     let bookTitle = 'Game of Thrones'
     let thumbnail = 'http://books.google.com/books/content?id=JPDOSzE7Bo0C&printsec=frontcover&img=1&zoom=1&source=gbs_api';
     let categories = 'Fiction';
@@ -80,7 +80,6 @@ class Books extends Component {
         </Container>
       </div>
     );
-  }
-}
+  };
 
-export default Books;
+export default BookDetail;
