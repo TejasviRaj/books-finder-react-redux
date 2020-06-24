@@ -1,3 +1,5 @@
+//Author- Tejasvi Raj Pant
+
 import React, {ChangeEvent, SyntheticEvent} from 'react';
 import './SearchBar.css';
 

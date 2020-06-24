@@ -1,0 +1,128 @@
+  
+  .bookHeading {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+    font-family: inherit;
+
+  }
+  
+  .bookText {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+
+  
+  .bookCover {
+    width: 35%;
+    margin-right: 20px;
+    box-shadow: 2px 3px 3px 0px #0000003b;
+  }
+
+  .bookInfo {
+    display: flex;
+    height: auto;
+    min-height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .butto {
+    align-self: center;
+    width: 100%;
+  }
+      
+  
+  .bookCardContainer {
+
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  height: auto;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  
+  
+  .bookCard {
+    font-family: 'Raleway', sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  list-style: none;
+  flex-basis: 20%;
+  height: auto;
+  min-height: 100%;
+  margin: 15px 15px 30px 15px;
+  padding: 15px;
+  background-color: #fff;
+  text-align: left;
+  box-shadow: 2px 3px 3px 0px #0000003b;
+  border-radius: 5px;
+  }
+
+  .bookCardInnerFlex {
+    display: flex;
+    height: 100%;
+
+  }
+ 
+  .bookCardOuterFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%
+  }
+  .descriptionButton {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #4b4b71;
+    border-color: #4b4b71;
+    border-radius: 20px;
+    height: 45px;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    border: 0;
+  }
+
+  .buyBookButton {
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #3e8bd5;
+    border-radius: 20px;
+    height: 35px;
+    margin-top: 0.5rem;
+    color: #fff;
+    font-size: 17px;
+    width: 7rem;
+    width: 100%;
+
+
+  
+border: 1px solid #3e8bd5;
+  }
+       
+  @media screen and (max-width: 1220px) {
+    .bookCard {
+      flex-basis: 25%;
+     
+    } 
+  }
+  
+  @media screen and (max-width: 900px) {
+    .bookCard {
+      flex-basis: 40%;
+     
+    } 
+  }
+  
+  
+  @media screen and (max-width: 650px) {
+    .bookCard {
+      flex-basis: 90%;
+     
+    } 
+  }
+  

@@ -1,5 +1,7 @@
+//Author- Tejasvi Raj Pant
+
 import React, { Component } from 'react';
-import { Container, Row, Col, Card, CardBody } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import './BookDetail.css';
 class Books extends Component {
   render() {
