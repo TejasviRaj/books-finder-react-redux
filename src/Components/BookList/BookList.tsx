@@ -4,18 +4,20 @@ import React from 'react';
 import NoBook from './nobook.png';
 import './BookList.css';
 import Book from '../../Models/book'
+import {
+  Link
+} from "react-router-dom";
+import { useSelector} from 'react-redux';
+import { RootState } from '../../Reducers/rootReducer';
 
-interface PropTypes {
-  books?: Book[] | null
-}
-
-const BookList = (props: PropTypes) => {
+const BookList = () => {
+  const books: Book[] = useSelector((state: RootState) => state.books);
 
   return (
     <div>
       <div className="bookCardContainer">
         {
-          props.books && props.books.map((book) => {
+          books && books.map((book) => {
 
             let { imageLinks, title, authors, publisher, previewLink } = book.volumeInfo ?? {};
 
@@ -40,9 +42,15 @@ const BookList = (props: PropTypes) => {
                             ? publisher
                             : 'Unknown'}</p>
                         </div>
-                          <a href={previewLink} className="butto">
+                          <Link to={{
+                                pathname: '/description',
+                                state: {
+                                  bookId: book.id
+                                }
+                              }}
+                                 className="butto">
                             <button className="descriptionButton" >View Description</button>
-                          </a>
+                          </Link>
                       </div>
 
                   </div>

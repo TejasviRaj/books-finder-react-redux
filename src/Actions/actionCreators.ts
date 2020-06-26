@@ -7,24 +7,24 @@ import {
 	FETCH_BOOKS_FAIL,
 } from './ActionTypes';
 
-import IFetchWeatherSucceeded from './IFetchBooksSucceeded';
-import IFetchWeatherFail from './IFetchBooksFail';
-import IFetchWeatherRequested from './IFetchBooksRequested';
-import IFetchWeather from './IFetchBooks';
+import IFetchBooksSucceeded from './IFetchBooksSucceeded';
+import IFetchBooksFail from './IFetchBooksFail';
+import IFetchBooksRequested from './IFetchBooksRequested';
+import IFetchBooks from './IFetchBooks';
 import IBooksResponse from '../Models/IBooksResponse';
 
 
-export const fetchWeather = (searchString: string): IFetchWeather => ({
+export const fetchBooks = (searchString: string): IFetchBooks => ({
 	type: FETCH_BOOKS,
 	searchString: searchString
 })
-export const fetchWeatherRequested = (): IFetchWeatherRequested => ({ type: FETCH_BOOKS_REQUESTED })
+export const fetchBooksRequested = (): IFetchBooksRequested => ({ type: FETCH_BOOKS_REQUESTED })
 
-export const fetchWeatherFail = (): IFetchWeatherFail => ({
+export const fetchBooksFail = (): IFetchBooksFail => ({
 	type: FETCH_BOOKS_FAIL
 });
 
-export const fetchWeatherSucceeded = (payload: IBooksResponse): IFetchWeatherSucceeded => {
+export const fetchBooksSucceeded = (payload: IBooksResponse): IFetchBooksSucceeded => {
 	return ({
 	type: FETCH_BOOKS_SUCCEEDED,
 	payload

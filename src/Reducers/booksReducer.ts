@@ -5,20 +5,18 @@ import Books from '../Models/book';
 import {IActionCreator} from '../Actions/IActionCreator';
 import initialState from '../Store/initialState'
 
-const bookReducer = (state: Books[] = initialState , action: IActionCreator): Books[] => {
+const bookReducer = (state: Books[] = [...initialState] , action: IActionCreator): Books[] => {
 
 	switch (action.type) {
 		case FETCH_BOOKS_REQUESTED:
-			return {
-				...state,
-			}
+			return [...state]
 		case FETCH_BOOKS_SUCCEEDED:
-			return action.payload.items
+			console.log("response");
+			console.log([...action.payload.items])
+			return [...action.payload.items]
 			
 		case FETCH_BOOKS_FAIL:
-			return {
-				...state,
-			}
+			return [...state]
 		default:
 			return state
 

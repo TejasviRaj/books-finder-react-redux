@@ -1,17 +1,33 @@
 //Author- Tejasvi Raj Pant
 
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './BookDetail.css';
+import { useSelector} from 'react-redux';
+import { RootState } from '../../Reducers/rootReducer';
+import Book from '../../Models/book'
 
-const BookDetail = () => {
-    let bookTitle = 'Game of Thrones'
-    let thumbnail = 'http://books.google.com/books/content?id=JPDOSzE7Bo0C&printsec=frontcover&img=1&zoom=1&source=gbs_api';
-    let categories = 'Fiction';
-    let authors = 'George R.R. Martin';
-    let publisher = 'HarperCollins UK';
-    let description = 'HBO’s hit series A GAME OF THRONES is based on George R. R. Martin’s internationally bestselling series A SONG OF ICE AND FIRE, the greatest fantasy epic of the modern age. A GAME OF THRONES is the first volume in the series.';
-    let pageCount = '912';
+interface PropTypes {
+  location: {
+    pathname: string
+      state: {
+    bookId: string
+  }
+  }
+}
+
+const BookDetail = (props: PropTypes) => {
+    const books: Book[] = useSelector((state: RootState) => state.books);
+    const book = books.filter (book => book.id === props.location.state.bookId )[0];
+    console.log(book);
+    let bookTitle = book.volumeInfo?.title;
+    let thumbnail = book.volumeInfo?.title && book.volumeInfo?.imageLinks?.thumbnail;
+    let categories = book.volumeInfo?.title && book.volumeInfo?.title[0];
+    let authors = book.volumeInfo?.authors?.join(',');
+    let publisher = book.volumeInfo?.publisher;
+    let description = book.volumeInfo?.description;
+    let pageCount = book.volumeInfo?.pageCount;
+    console.log("id");
     return (
       <div className = "bookDetail">
         <Container style={{ marginTop: '1rem' }}>
