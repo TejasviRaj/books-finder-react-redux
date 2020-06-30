@@ -19,7 +19,7 @@ interface PropTypes {
 
 const BookDetail = (props: PropTypes) => {
   const books: Book[] = useSelector((state: RootState) => state.books);
-  const book = books.filter(book => book.id === props.location.state.bookId)[0];
+  const book = books.filter(book => book.id === props.location.state?.bookId)[0];
 
   if (book) {
     let bookTitle = book.volumeInfo?.title;
@@ -84,7 +84,7 @@ const BookDetail = (props: PropTypes) => {
                     <i className="far fa-star"></i>
                   </span>)
                 }
-                </> : 'Unknown'
+                </> : <span className="value">Not Available</span>
                 }
 
               </div>
