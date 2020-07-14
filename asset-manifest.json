@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/books-finder-react-redux/static/css/main.4025fe2e.chunk.css",
+    "main.js": "/books-finder-react-redux/static/js/main.867cd7e7.chunk.js",
+    "main.js.map": "/books-finder-react-redux/static/js/main.867cd7e7.chunk.js.map",
+    "runtime-main.js": "/books-finder-react-redux/static/js/runtime-main.a0bc14b9.js",
+    "runtime-main.js.map": "/books-finder-react-redux/static/js/runtime-main.a0bc14b9.js.map",
+    "static/js/2.f9b51d6a.chunk.js": "/books-finder-react-redux/static/js/2.f9b51d6a.chunk.js",
+    "static/js/2.f9b51d6a.chunk.js.map": "/books-finder-react-redux/static/js/2.f9b51d6a.chunk.js.map",
+    "index.html": "/books-finder-react-redux/index.html",
+    "precache-manifest.56c02f5aa9e98447cf6ffe5ac623042f.js": "/books-finder-react-redux/precache-manifest.56c02f5aa9e98447cf6ffe5ac623042f.js",
+    "service-worker.js": "/books-finder-react-redux/service-worker.js",
+    "static/css/main.4025fe2e.chunk.css.map": "/books-finder-react-redux/static/css/main.4025fe2e.chunk.css.map",
+    "static/js/2.f9b51d6a.chunk.js.LICENSE.txt": "/books-finder-react-redux/static/js/2.f9b51d6a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a0bc14b9.js",
+    "static/js/2.f9b51d6a.chunk.js",
+    "static/css/main.4025fe2e.chunk.css",
+    "static/js/main.867cd7e7.chunk.js"
+  ]
+}
