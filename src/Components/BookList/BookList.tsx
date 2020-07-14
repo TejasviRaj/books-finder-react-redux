@@ -43,7 +43,7 @@ const BookList = () => {
                             : 'Unknown'}</p>
                         </div>
                           <Link to={{
-                                pathname: '/description',
+                                pathname: process.env.PUBLIC_URL + "/description",
                                 state: {
                                   bookId: book.id
                                 }
